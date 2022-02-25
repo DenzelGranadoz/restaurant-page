@@ -1,0 +1,31 @@
+.hello {
+  color: blue;
+}
+
+body {
+  background: url('../assets/potato-bg.jpeg');
+}
+
+.navbar {
+  border-bottom: 2px solid #b79268;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-items {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-items li {
+  list-style: none;
+  font-size: 1.4rem;
+  color: #b79268;
+}
+
+.menu-items li:hover {
+  text-decoration: underline;
+  opacity: 50%;
+  cursor: pointer;
+}
