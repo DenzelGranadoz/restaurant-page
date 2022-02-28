@@ -1,23 +1,20 @@
-import './styles/style.css';
-
-export { homepage };
-
+export { createNavbar, createHomepageBody, createFooter, renderHomepage };
 
 function createNavbar() {
   const nav = document.createElement('nav');
   nav.classList.add('navbar');
 
   const ulist = document.createElement('ul');
-  ulist.classList.add('menu-items');
+  ulist.classList.add('navbar-items');
   nav.appendChild(ulist);
 
   const homeItem = document.createElement('li');
-  homeItem.classList.add('item');
+  // homeItem.classList.add('item');
   homeItem.textContent = 'Home';
   ulist.appendChild(homeItem);
 
   const menuItem = document.createElement('li');
-  menuItem.classList.add('item');
+  // menuItem.classList.add('item');
   menuItem.textContent = 'Menu';
   ulist.appendChild(menuItem);
 
@@ -56,6 +53,8 @@ function createHomepageBody() {
   return homepageBody;
 }
 
+
+
 function createFooter() {
   const footer = document.createElement('footer');
   footer.classList.add('footer');
@@ -70,7 +69,7 @@ function createFooter() {
   return footer;
 }
 
-function homepage() {
+function renderHomepage() {
   const content = document.getElementById('content');
   content.appendChild(createNavbar());
   content.appendChild(createHomepageBody());

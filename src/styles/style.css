@@ -12,6 +12,8 @@ body {
   background: url('../assets/potato-bg.jpeg');
 }
 
+/* homepage  */
+
 .navbar {
   border-bottom: 2px solid var(--font-color);
   display: flex;
@@ -20,19 +22,19 @@ body {
   height: 4rem;
 }
 
-.menu-items {
+.navbar-items {
   width: 25%;
   display: flex;
   justify-content: space-between;
 }
 
-.menu-items li {
+.navbar-items li {
   list-style: none;
   font-size: 1.4rem;
   color: var(--font-color);
 }
 
-.menu-items li:hover {
+.navbar-items li:hover {
   text-decoration: underline;
   opacity: 50%;
   cursor: pointer;
@@ -86,4 +88,75 @@ body {
 
 .footer-content:hover {
   cursor: pointer;
+}
+
+/* Menu page */
+.menu {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-items {
+  height: 85%;
+  width: 90%;
+  background-color: black;
+  opacity: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--font-color)
+}
+
+.menu-item img {
+  height: 80px;
+  width: 80px;
+}
+
+.item-label {
+  margin-left: 1rem;
+}
+
+.menu-item h2 {
+  color: var(--font-color);
+  width: 20%;
+}
+
+.menu-item p {
+  color: var(--font-color);
+}
+
+/* contact page */
+
+.contact-body {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-div{
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  opacity: 60%;
+  padding: 2rem;
+}
+
+.contact-info {
+  color: var(--font-color);
+  margin-bottom: 1rem;
+  font-style: bold;
+}
+
+.contact-map {
+  height: 350px;
+  width: 435px;
 }
