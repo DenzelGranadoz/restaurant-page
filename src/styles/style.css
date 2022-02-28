@@ -9,7 +9,7 @@
 }
 
 body {
-  background: url('../assets/potato-bg.jpeg');
+  background: url('/dist/assets/potato-bg.jpeg');
 }
 
 /* homepage  */

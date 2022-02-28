@@ -20,7 +20,7 @@ function createContact() {
   contactDiv.appendChild(contactAdd);
 
   const contactMap = document.createElement('img');
-  contactMap.src = '../src/assets/location.png';
+  contactMap.src = 'assets/location.png';
   contactMap.alt = 'Address Map';
   contactMap.classList.add('contact-map');
   contactDiv.appendChild(contactMap);
