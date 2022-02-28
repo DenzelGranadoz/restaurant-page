@@ -31,7 +31,6 @@ function createContact() {
 
 function renderContact() {
   const content = document.getElementById('content');
-  content.appendChild(homepage.createNavbar());
   content.appendChild(createContact());
   content.appendChild(homepage.createFooter());
 }

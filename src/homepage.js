@@ -9,17 +9,17 @@ function createNavbar() {
   nav.appendChild(ulist);
 
   const homeItem = document.createElement('li');
-  // homeItem.classList.add('item');
+  homeItem.classList.add('home-nav');
   homeItem.textContent = 'Home';
   ulist.appendChild(homeItem);
 
   const menuItem = document.createElement('li');
-  // menuItem.classList.add('item');
+  menuItem.classList.add('menu-nav');
   menuItem.textContent = 'Menu';
   ulist.appendChild(menuItem);
 
   const contactItem = document.createElement('li');
-  contactItem.classList.add('item');
+  contactItem.classList.add('contact-nav');
   contactItem.textContent = 'Contact Us';
   ulist.appendChild(contactItem);
 
@@ -75,18 +75,3 @@ function renderHomepage() {
   content.appendChild(createHomepageBody());
   content.appendChild(createFooter());
 }
-
-//  import Icon from './icon.png';
-
-//  function component() {
-//    const element = document.createElement('div');
-
-//    // Lodash, now imported by this script
-//    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-//    element.classList.add('hello');
-
-//   // Add the image to our existing div.
-//   const myIcon = new Image();
-//   myIcon.src = Icon;
-
-//   element.appendChild(myIcon);

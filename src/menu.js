@@ -76,7 +76,6 @@ function createMenuItem(name, ingredients) {
 
 function renderMenu() {
   const content = document.getElementById('content');
-  content.appendChild(homepage.createNavbar());
   content.appendChild(createMenu());
   content.appendChild(homepage.createFooter());
 }

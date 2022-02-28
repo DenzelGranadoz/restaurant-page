@@ -1,26 +1,42 @@
 import './styles/style.css';
 import * as homepage from './homepage';
-import * as menu from './menu';
-import * as contact from './contact';
+import * as menupage from './menu';
+import * as contactpage from './contact';
 
-//use an iife for whole thing? then toggle renders based on button clicked
 window.addEventListener('DOMContentLoaded', homepage.renderHomepage());
-// content.removeChild(content.children[1]);
-resetDOMContent(); 
 
-menu.renderMenu();
+const home = document.querySelector('.home-nav');
+home.addEventListener('click', homeNav);
 
-resetDOMContent(); 
-
-contact.renderContact();
-
-function resetDOMContent() {
-  while (content.firstChild) {
-    content.firstChild.remove();
-  }
+function homeNav() {
+  console.log('home');
+  location.reload();
+  homepage.renderHomepage();
 }
 
+const menu = document.querySelector('.menu-nav');
+menu.addEventListener('click', menuNav);
 
-// content.appendChild(homepage.createHomepageBody());
-// content.appendChild(homepage.createFooter());
+const openMenu = document.querySelector('.open-menu');
+openMenu.addEventListener('click', menuNav);
 
+function menuNav() {
+  console.log('menu');
+  resetDOMContent();
+  menupage.renderMenu();
+}
+
+const contact = document.querySelector('.contact-nav');
+contact.addEventListener('click', contactNav);
+
+function contactNav() {
+  console.log('contact');
+  resetDOMContent();
+  contactpage.renderContact();
+}
+
+function resetDOMContent() {
+  while (content.lastChild && content.childElementCount != 1) {
+    content.lastChild.remove();
+  }
+}
