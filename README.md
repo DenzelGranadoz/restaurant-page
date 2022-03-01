@@ -1,19 +1,16 @@
 # Tic Tac Toe
-This is a [Restaurant Page](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page) project from [The Odin Project](https://www.theodinproject.com) curriculum.
+This is a [Restaurant Page](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page) project from [The Odin Project](https://www.theodinproject.com) curriculum. The goal is to create a functional multi page Restaurant website using WebPack to bundle files.
 
-Main topic: Webpack, ES6 Module
-<!-- ## Features
-* One player mode (You Vs. an AI)
-* Two player mode (You Vs. a friend)
-* Race to 5!
-* Enter your names
-* Go to back to Main Menu in-between rounds
-* Responsive design (Phone and Tablet friendly)
-
-## Build With
+## Built With
 * HTML
 * CSS
 * Vanilla JavaScript
 
+## Features
+Three navigation links available in the navbar.
+* Home - Go back to the HomePage
+* Menu - All the potato snacks being served
+* Contact - Contact Us section, find out number and location as well
+
 ## Demo
-> - [Check me out!](https://denzelgranadoz.github.io/tic-tac-toe/) -->
+> - [Check me out!](https://denzelgranadoz.github.io/tic-tac-toe/)
