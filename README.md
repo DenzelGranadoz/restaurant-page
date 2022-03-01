@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Restaurant Page
 This is a [Restaurant Page](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page) project from [The Odin Project](https://www.theodinproject.com) curriculum. The goal is to create a functional multi page Restaurant website using WebPack to bundle files.
 
 ## Built With
